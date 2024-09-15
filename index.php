@@ -3,13 +3,13 @@
 $name = "Anthony Reyna";
 echo $name . "'s PHP Web Page";
 
-echo "Hello, and welcom to my page.";
-echo "My name is Anthony Reyna. I am 21 years old, and I am currently a college student.
-I like palying video games, plauing D&D, and watching videos on the interent.";
-echo "I am taking this class to learn more programming lanugages, and to complete my Web Design degree.";
+echo "\n" . "Hello, and welcom to my page.";
+echo "\n" . "My name is Anthony Reyna. I am 21 years old, and I am currently a college student." . "\n" . 
+"I like palying video games, plauing D&D, and watching videos on the interent.";
+echo "\n" . "I am taking this class to learn more programming lanugages, and to complete my Web Design degree.";
 
 $myString = "I know the moon, and this is an alien city - Amy Lowell, A London Throughfare. 2 A.M.";
-echo $myString;
+echo "\n" . $myString;
 
 $brookhavenName = "Dallas College Brookhaven Campus";
 $brookhavenStreet = "3939 Valley View Lane";
@@ -19,7 +19,7 @@ $brookhavenPostal = "75244";
 
 $brookhavenAddress = $brookhavenName . $brookhavenStreet . $brookhavenCity . $brookhavenState . $brookhavenPostal;
 
-echo $brookhavenAddress;
+echo "\n" . $brookhavenAddress;
 
 $x = 37;
 $y = 6;
@@ -30,18 +30,19 @@ $product = $x * $y;
 $quotient = $x / $y;
 $modulus = $x % $y;
 
-echo $x . " + " . $y . " = " . $sum;
-echo $x . " - " . $y . " = " . $difference;
-echo $x . " * " . $y . " = " . $product;
-echo $x . " / " . $y . " = " . $quotient;
-echo $x . " % " . $y . " = " . $modulus;
+echo "\n" . $x . " + " . $y . " = " . $sum;
+echo "\n" . $x . " - " . $y . " = " . $difference;
+echo "\n" . $x . " * " . $y . " = " . $product;
+echo "\n" . $x . " / " . $y . " = " . $quotient;
+echo "\n" . $x . " % " . $y . " = " . $modulus;
 
 $currentPage= $_SERVER['SCRIPT_NAME'];
-echo $currentPage;
+echo "\n" . $currentPage;
 
 //This is a comment for the assignment.
 //This is the first version of the file.
 //I will add more comments to show more updates.
 //Update One: Forgot to add semicolons to certain lines, and added them where needed.
+//Update Two: Added line breaks to sperate everything.
 
 ?>
