@@ -42,5 +42,6 @@ echo $currentPage;
 //This is a comment for the assignment.
 //This is the first version of the file.
 //I will add more comments to show more updates.
+//Update One: Forgot to add semicolons to certain lines, and added them where needed.
 
 ?>
