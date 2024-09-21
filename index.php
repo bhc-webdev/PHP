@@ -1,14 +1,14 @@
 <?php
 
 $name = "Anthony Reyna";
-echo $name . "'s PHP Web Page";
+echo $name . "'s PHP Web Page<br>";
 
-echo "<p>Hello, and welcome to my page.</p>\n";
-echo "<p>My name is Anthony Reyna. I am 21 years old, and I am currently a college student.<br>I like playing video games, playing D&D, and watching videos on the interent.</p>\n";
-echo "<p>I am taking this class to learn more programming lanugages, and to complete my Web Design degree.</p>\n";
+echo "Hello, and welcome to my page.<br>";
+echo "My name is Anthony Reyna. I am 21 years old, and I am currently a college student.<br>I like playing video games, playing D&D, and watching videos on the interent.";
+echo "I am taking this class to learn more programming lanugages, and to complete my Web Design degree.<br>";
 
 $myString = "I know the moon, and this is an alien city - Amy Lowell, A London Throughfare. 2 A.M.";
-echo "<p>" . $myString . "</p>\n";
+echo $myString . "<br>";
 
 $brookhavenName = "Dallas College Brookhaven Campus";
 $brookhavenStreet = " 3939 Valley View Lane";
@@ -18,7 +18,7 @@ $brookhavenPostal = " 75244";
 
 $brookhavenAddress = $brookhavenName . $brookhavenStreet . $brookhavenCity . $brookhavenState . $brookhavenPostal;
 
-echo "<p>" . $brookhavenAddress . "</p>\n";
+echo $brookhavenAddress . "<br>";
 
 $x = 37;
 $y = 6;
@@ -29,14 +29,14 @@ $product = $x * $y;
 $quotient = $x / $y;
 $modulus = $x % $y;
 
-echo "<p>" . $x . " + " . $y . " = " . $sum . "</p>\n";
-echo "<p>" . $x . " - " . $y . " = " . $difference . "</p>\n";
-echo "<p>" . $x . " * " . $y . " = " . $product . "</p>\n";
-echo "<p>" . $x . " / " . $y . " = " . $quotient . "</p>\n";
-echo "<p>" . $x . " % " . $y . " = " . $modulus . "</p>\n";
+echo $x . " + " . $y . " = " . $sum . "<br>";
+echo $x . " - " . $y . " = " . $difference . "<br>";
+echo $x . " * " . $y . " = " . $product . "<br>";
+echo $x . " / " . $y . " = " . $quotient . "<br>";
+echo $x . " % " . $y . " = " . $modulus . "<br>";
 
 $currentPage= $_SERVER['SCRIPT_NAME'];
-echo $currentPage . "</p>\n";
+echo $currentPage . "<br>";
 
 //This is a comment for the assignment.
 //This is the first version of the file.
