@@ -1,15 +1,15 @@
 <?php
 
 $name = "Anthony Reyna";
-echo $name . "'s PHP Web Page" ;
+echo $name . "'s PHP Web Page";
 
-echo "Hello, and welcome to my page." ;
-echo "My name is Anthony Reyna. I am 21 years old, and I am currently a college student.<br>" 
+echo "Hello, and welcome to my page.";
+echo "My name is Anthony Reyna. I am 21 years old, and I am currently a college student." 
 "I like palying video games, plauing D&D, and watching videos on the interent.";
 echo "I am taking this class to learn more programming lanugages, and to complete my Web Design degree." ;
 
 $myString = "I know the moon, and this is an alien city - Amy Lowell, A London Throughfare. 2 A.M.";
-echo $myString ;
+echo $myString;
 
 $brookhavenName = "Dallas College Brookhaven Campus";
 $brookhavenStreet = " 3939 Valley View Lane";
@@ -19,7 +19,7 @@ $brookhavenPostal = " 75244";
 
 $brookhavenAddress = $brookhavenName . $brookhavenStreet . $brookhavenCity . $brookhavenState . $brookhavenPostal;
 
-echo $brookhavenAddress ;
+echo $brookhavenAddress;
 
 $x = 37;
 $y = 6;
@@ -37,7 +37,7 @@ echo $x . " / " . $y . " = " . $quotient ;
 echo $x . " % " . $y . " = " . $modulus ;
 
 $currentPage= $_SERVER['SCRIPT_NAME'];
-echo $currentPage ;
+echo $currentPage;
 
 //This is a comment for the assignment.
 //This is the first version of the file.
