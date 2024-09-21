@@ -3,7 +3,7 @@
 $name = "Anthony Reyna";
 echo "<p>" . $name . "'s PHP Web Page" . "</p>";
 
-echo "<p>Hello, and welcom to my page.</p>";
+echo "<p>Hello, and welcome to my page.</p>";
 echo "<p>My name is Anthony Reyna. I am 21 years old, and I am currently a college student.</p>"
 "<p>I like palying video games, plauing D&D, and watching videos on the interent.</p>";
 echo "<p>I am taking this class to learn more programming lanugages, and to complete my Web Design degree.</p>";
@@ -30,7 +30,7 @@ $product = $x * $y;
 $quotient = $x / $y;
 $modulus = $x % $y;
 
-echo "<p>" . $x . " + " . $y . " = " . $sum . "/p>";
+echo "<p>" . $x . " + " . $y . " = " . $sum . "</p>";
 echo "<p>" . $x . " - " . $y . " = " . $difference . "/<p>";
 echo "<p>" . $x . " * " . $y . " = " . $product . "/<p>";
 echo "<p>" . $x . " / " . $y . " = " . $quotient . "</p>";
