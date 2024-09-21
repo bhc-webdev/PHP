@@ -1,12 +1,12 @@
 <?php
 
 $name = "Anthony Reyna";
-echo $name . "'s PHP Web Page<br>";
+echo $name . "'s PHP Web Page";
 
-echo "Hello, and welcom to my page.</p>";
-echo "My name is Anthony Reyna. I am 21 years old, and I am currently a college student.</p>";
-"I like palying video games, plauing D&D, and watching videos on the interent.</p>";
-echo "I am taking this class to learn more programming lanugages, and to complete my Web Design degree.</p>";
+echo "<p>Hello, and welcom to my page.</p>";
+echo "<p>My name is Anthony Reyna. I am 21 years old, and I am currently a college student.</p>";
+"<p>I like palying video games, plauing D&D, and watching videos on the interent.</p>";
+echo "<p>I am taking this class to learn more programming lanugages, and to complete my Web Design degree.</p>";
 
 $myString = "I know the moon, and this is an alien city - Amy Lowell, A London Throughfare. 2 A.M.";
 echo "<p>" . $myString . "</p>";
@@ -17,7 +17,7 @@ $brookhavenCity = "Farmers Branch ";
 $brookhavenState = "Texas ";
 $brookhavenPostal = "75244";
 
-$brookhavenAddress = "<p>"$brookhavenName . $brookhavenStreet . $brookhavenCity . $brookhavenState . $brookhavenPostal . "</p>";
+$brookhavenAddress = "<p>" . $brookhavenName . $brookhavenStreet . $brookhavenCity . $brookhavenState . $brookhavenPostal . "</p>";
 
 echo $brookhavenAddress;
 
