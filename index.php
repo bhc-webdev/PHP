@@ -1,14 +1,14 @@
 <?php
 
 $name = "Anthony Reyna";
-echo $name . "'s PHP Web Page<br>";
+echo $name . "'s PHP Web Page";
 
-echo "Hello, and welcome to my page.<br>";
-echo "My name is Anthony Reyna. I am 21 years old, and I am currently a college student.<br>I like playing video games, playing D&D, and watching videos on the interent.";
-echo "I am taking this class to learn more programming lanugages, and to complete my Web Design degree.<br>";
+echo "<br>Hello, and welcome to my page.";
+echo "<br>My name is Anthony Reyna. I am 21 years old, and I am currently a college student.<br>I like playing video games, playing D&D, and watching videos on the interent.";
+echo "<br>I am taking this class to learn more programming lanugages, and to complete my Web Design degree.";
 
 $myString = "I know the moon, and this is an alien city - Amy Lowell, A London Throughfare. 2 A.M.";
-echo $myString . "<br>";
+echo "<br>" . $myString;
 
 $brookhavenName = "Dallas College Brookhaven Campus";
 $brookhavenStreet = " 3939 Valley View Lane";
@@ -18,7 +18,7 @@ $brookhavenPostal = " 75244";
 
 $brookhavenAddress = $brookhavenName . $brookhavenStreet . $brookhavenCity . $brookhavenState . $brookhavenPostal;
 
-echo $brookhavenAddress . "<br>";
+echo "<br>" . $brookhavenAddress;
 
 $x = 37;
 $y = 6;
@@ -29,14 +29,14 @@ $product = $x * $y;
 $quotient = $x / $y;
 $modulus = $x % $y;
 
-echo $x . " + " . $y . " = " . $sum . "<br>";
-echo $x . " - " . $y . " = " . $difference . "<br>";
-echo $x . " * " . $y . " = " . $product . "<br>";
-echo $x . " / " . $y . " = " . $quotient . "<br>";
-echo $x . " % " . $y . " = " . $modulus . "<br>";
+echo "<br>" . $x . " + " . $y . " = " . $sum;
+echo "<br>" . $x . " - " . $y . " = " . $difference;
+echo "<br>" . $x . " * " . $y . " = " . $product;
+echo "<br>" . $x . " / " . $y . " = " . $quotient;
+echo "<br>" . $x . " % " . $y . " = " . $modulus;
 
 $currentPage= $_SERVER['SCRIPT_NAME'];
-echo $currentPage . "<br>";
+echo "<br>" . $currentPage;
 
 //This is a comment for the assignment.
 //This is the first version of the file.
