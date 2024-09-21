@@ -45,3 +45,5 @@ echo "<p>" . $currentPage . "</p>";
 //Update One: Forgot to add semicolons to certain lines, and added them where needed.
 //Update Two: Added line breaks to sperate everything.
 //Update: Testing paragraph tags.
+
+error_reporting(E_ALL | E_STRICT);
