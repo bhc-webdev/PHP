@@ -1,3 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+</head>
+
+<body>
 <?php
 
 $name = "Anthony Reyna";
@@ -45,3 +53,6 @@ echo "<p>$currentPage</p>\n";
 //Update Two: Added line breaks to sperate everything.
 
 ?>
+</body>
+
+</html>
