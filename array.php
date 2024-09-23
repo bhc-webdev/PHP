@@ -4,10 +4,6 @@ $albumRatings = ["Mama's Gun" => "9", "Introspection" => "8", "Stereotype A" => 
 $albumRatings["Abbey Road"] = "10";
 ksort($albumRatings);
 
-foreach ($albumRating as $album => $rating) {
-    echo ="<p>$album is a $rating out of 10.</p>\n";
-}
-
 $pageContent = "<h1>Favorite Albums<br></h1>". $value;
 
 $band = array (
@@ -58,5 +54,23 @@ foreach ($band70s as $subArray => $band70s) {
 echo "<p>" . $pageContent . "</p>\n";
 
 //First Test
+//Second Test
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <?= 
+        foreach ($albumRating as $album => $rating) {
+            echo ="<p>$album is a $rating out of 10.</p>\n";
+        }
+        $pageContent; 
+    ?>
+</body>
+</html>
