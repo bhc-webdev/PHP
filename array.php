@@ -4,7 +4,7 @@ $albumRatings = ["Mama's Gun" => "9", "Introspection" => "8", "Stereotype A" => 
 $albumRatings["Abbey Road"] = "10";
 ksort($albumRatings);
 
-$pageContent = "<h1>Favorite Albums<br></h1>". $value;
+$pageContent = "\n<h1>Favorite Albums<br></h1>". $value;
 
 $band = array (
     "The Beatles" = array("A Hard Day's Night,"=>"1964","Help!,"=>"1965","Rubber Soul,"=>"1965","Abbey Road,"=>"1969");
@@ -21,7 +21,7 @@ foreach ($band as $subArray => $band) {
         echo "$albumName in $albumYear<br>";
     }
 
-    echo "</p>\n"
+    echo "\n</p>"
 }
 
 $rowArray = array("Tommy,"=>"1969","Quadrophenia,"=>"1973","The Who by Numbers,"=>"1975");
@@ -33,7 +33,7 @@ foreach ($who as $subArray => $who) {
 		foreach ($rowArray as $albumName => $albumYear) {
 			echo "$albumName in $albumYear<br>\n";
 		}
-		echo "</p>\n";
+		echo "\n</p>";
 	}
 }
 
@@ -48,29 +48,12 @@ foreach ($band70s as $subArray => $band70s) {
         echo "$albumName in $albumYear<br>";
     }
 
-    echo "</p>\n";
+    echo "\n</p>";
 }
 
-echo "<p>" . $pageContent . "</p>\n";
+echo "\n<p>$pageContent</p>";
 
 //First Test
 //Second Test
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array</title>
-</head>
-<body>
-    <?= 
-        foreach ($albumRating as $album => $rating) {
-            echo ="<p>$album is a $rating out of 10.</p>\n";
-        }
-        $pageContent; 
-    ?>
-</body>
-</html>
