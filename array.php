@@ -4,7 +4,7 @@ $albumRatings = ["Mama's Gun" => "9", "Introspection" => "8", "Stereotype A" => 
 $albumRatings["Abbey Road"] = "10";
 ksort($albumRatings);
 
-$pageContent = "\n<h1>Favorite Albums</h1>" . "\n<p>$value</p>" . "\n<p></p>";
+$pageContent = "\n<h1>Favorite Albums</h1>" . "\n<p>$value</p>" . "\n<p>$who</p>" . "\n<p>$band70s</p>";
 
 $band = array (
     "The Beatles" = array("A Hard Day's Night,"=>"1964","Help!,"=>"1965","Rubber Soul,"=>"1965","Abbey Road,"=>"1969");
