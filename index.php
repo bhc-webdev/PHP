@@ -1,7 +1,7 @@
 <?php
 
 $name = "Anthony Reyna";
-echo "\n<p>$name 's PHP Web Page.</p>";
+echo "<p>$name 's PHP Web Page.</p>";
 
 echo "\n<p>Hello, and welcome to my page.</p>";
 echo "\n<p>My name is Anthony Reyna. I am 21 years old, and I am currently a college student.<br>\nI like playing video games, playing D&D, and watching videos on the interent.</p>";
