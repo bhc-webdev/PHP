@@ -1,5 +1,5 @@
 <?php
-$pageContent = '<h1>"Favorite Albums"</h1>' . $whoValue . $bandList . $whoList;
+$pageContent = '<h1>"Favorite Albums"</h1>' . $whoValue . $bandList . $whoList . $seventiesList;
 
 $albumRatings = ["Mama's Gun" => "9", "Introspection" => "8", "Stereotype A" => "10", "Marble" => "7", "This is the One" => "8"];
 $albumRatings["Abbey Road"] = "10";
@@ -34,63 +34,23 @@ foreach ($band as $bandName => $albumList) {
         foreach ($albumList as $songTitle => $songYear) {
             echo "\n<li>$songTitle - $songYear</li>";
         }
-    echo "\n</ul>";
-}
-
-}
-
-
-
-
-
-
-
-echo $pageContent;
-
-/*$value = $band ["The Who"] ["1969"];
-. "$albumRatings" . "<p>$value</p>"
-
-foreach ($band as $subArray => $band) {
-    $pageContent . "\n<p>The band " . $subArray . " released:<br>";
-    foreach ($band as $albumName => $albumYear) {
-        echo "\n$albumName in $albumYear<br>";
+        echo "\n</ul>";
     }
-
-    echo "\n</p>"
 }
 
-$rowArray = array("Tommy,"=>"1969","Quadrophenia,"=>"1973","The Who by Numbers,"=>"1975");
-$who = array("The Who" = $rowArray);
-
-foreach ($who as $subArray => $who) {
-	if ($subArray == "The Who") {
-		$pageContent . "\n<p>The band" . $subArray . " released:<br>\n";
-		foreach ($rowArray as $albumName => $albumYear) {
-			echo "\n$albumName in $albumYear<br>";
-		}
-		echo "</p>";
-	}
-}
-
-$seventyArray1 = array("Led Zepplin IV" => "1971");
-$seventyArray2 = array("Sticky Fingers" => "1971");
-$seventyArray3 = array("Quadrophenia" => "1973", "The Who by Numbers" => "1975");
-$band70s = array("Led Zepplin" = $seventyArray1, "Rolling Stones" = $seventyArray2, "The Who" = $seventyArray3);
-
-foreach ($band70s as $subArray => $band70s) {
-    $pageContent . "\n<p>The band " . $subArray . " released:<br>";
-    foreach ($band70s as $albumName => $albumYear) {
-        echo "\n$albumName in $albumYear<br>";
+$seventiesList = "";
+foreach ($band as $bandName => $albumList) {
+    $seventiesList .= "\n<h2>$band</h2><ul>";
+    foreach ($albumList as $songTitle => $songYear) {
+        if ($songYear = "1971", "1973", "1975") {
+            echo "\n<li>$songTitle - $songYear</li>";
+        }
+        echo "\n</ul>"
     }
-
-    echo "</p>";
-
-
-
-ksort($movies); 37 echo '<tr><td colspan="2"><strong> Sorted by title:</strong></td></tr>'; 38 foreach ($movies as $title => $rating) { 39 echo "<tr><td>$rating</td> 40 <td>$title</td></tr>\n"; 41 }
-
 }
-    */
+
+echo "\n$pageContent";
+
 //First Test
 //Second Test
 
