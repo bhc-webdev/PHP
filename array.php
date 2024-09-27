@@ -1,5 +1,5 @@
 <?php
-$pageContent = "";
+$pageContent = '<h1>"Favorite Albums"</h1>' . $whoValue . $bandList . $whoList;
 
 $albumRatings = ["Mama's Gun" => "9", "Introspection" => "8", "Stereotype A" => "10", "Marble" => "7", "This is the One" => "8"];
 $albumRatings["Abbey Road"] = "10";
@@ -16,17 +16,36 @@ $theWho = ["Tommy"=>"1969", "Quadrophenia"=>"1973", "The Who by Numbers"=>"1975"
 
 $band = ["The Beatles" => $beatles, "Led Zepplin" => $ledZepplin, "Rolling Stones" => $rollingStones, "The Who" => $theWho];
 
+$whoValue = $band ["The Who"] ["1969"];
+
+$bandList = "";
 foreach ($band as $bandName => $albumList) {
-    $pageContent .= "\n<h2>$band</h2><ul>";
+    $bandList .="\n<h2>$band</h2><ul>";
     foreach ($albumList as $songTitle => $songYear) {
         echo "\n<li>$songTitle - $songYear</li>";
     }
     echo "\n</ul>";
 }
 
+$whoList = "";
+foreach ($band as $bandName => $albumList) {
+    if ($bandName == "The Who") {
+		$pageContent .="\n<h2>$bandName</h2>";
+        foreach ($albumList as $songTitle => $songYear) {
+            echo "\n<li>$songTitle - $songYear</li>";
+        }
+    echo "\n</ul>";
+}
+
+}
 
 
 
+
+
+
+
+echo $pageContent;
 
 /*$value = $band ["The Who"] ["1969"];
 . "$albumRatings" . "<p>$value</p>"
@@ -72,9 +91,6 @@ ksort($movies); 37 echo '<tr><td colspan="2"><strong> Sorted by title:</strong><
 
 }
     */
-
-echo "<h1>Favorite Albums</h1><br>\n<p>$pageContent</p>";
-
 //First Test
 //Second Test
 
