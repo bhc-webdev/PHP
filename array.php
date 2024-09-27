@@ -15,6 +15,8 @@ $band = array (
 
 $value = $band ["The Who"] ["1969"];
 
+
+/*
 foreach ($band as $subArray => $band) {
     $pageContent . "\n<p>The band " . $subArray . " released:<br>";
     foreach ($band as $albumName => $albumYear) {
@@ -50,6 +52,7 @@ foreach ($band70s as $subArray => $band70s) {
 
     echo "</p>";
 }
+    */
 
 echo "\n<p>$pageContent</p>";
 
