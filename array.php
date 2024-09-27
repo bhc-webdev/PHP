@@ -1,5 +1,5 @@
 <?php
-$pageContent = "Favorite Albums";
+$pageContent = "";
 
 $albumRatings = ["Mama's Gun" => "9", "Introspection" => "8", "Stereotype A" => "10", "Marble" => "7", "This is the One" => "8"];
 $albumRatings["Abbey Road"] = "10";
@@ -17,7 +17,7 @@ $theWho = ["Tommy"=>"1969", "Quadrophenia"=>"1973", "The Who by Numbers"=>"1975"
 $band = ["The Beatles" => $beatles, "Led Zepplin" => $ledZepplin, "Rolling Stones" => $rollingStones, "The Who" => $theWho];
 
 foreach ($band as $bandName => $albumList) {
-    echo "\n<h2>$band</h2><ul>";
+    $pageContent .= "\n<h2>$band</h2><ul>";
     foreach ($albumList as $songTitle => $songYear) {
         echo "\n<li>$songTitle - $songYear</li>";
     }
@@ -73,7 +73,7 @@ ksort($movies); 37 echo '<tr><td colspan="2"><strong> Sorted by title:</strong><
 }
     */
 
-echo "\n<p>$pageContent</p>";
+echo "<h1>Favorite Albums</h1><br>\n<p>$pageContent</p>";
 
 //First Test
 //Second Test
