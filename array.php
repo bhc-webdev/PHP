@@ -4,8 +4,8 @@ $pageContent = '<h1>"Favorite Albums"</h1>' . $ratingList . $whoValue . $bandLis
 $albumRatings = ["Mama's Gun" => "9", "Introspection" => "8", "Stereotype A" => "10", "Marble" => "7", "This is the One" => "8"];
 $albumRatings["Abbey Road"] = "10";
  
-$ratingList = ""
-ksort($albumRatings)
+$ratingList = "";
+ksort($albumRatings);
 foreach ($albumRatings as $albumTilte => $rating) {
     $ratingList .="\n<p>$albumTitle is a $rating out of 10.</p>";
 }
@@ -31,7 +31,7 @@ foreach ($band as $bandName => $albumList) {
 $whoList = "";
 foreach ($band as $bandName => $albumList) {
     if ($bandName == "The Who") {
-		$pageContent .="\n<h2>$bandName</h2>";
+		$whoList .="\n<h2>$bandName</h2>";
         foreach ($albumList as $songTitle => $songYear) {
             echo "\n<li>$songTitle - $songYear</li>";
         }
@@ -46,7 +46,7 @@ foreach ($band as $bandName => $albumList) {
         if ($songYear = "1971", "1973", "1975") {
             echo "\n<li>$songTitle - $songYear</li>";
         }
-        echo "\n</ul>"
+        echo "\n</ul>";
     }
 }
 
