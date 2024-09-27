@@ -4,7 +4,7 @@ $albumRatings = ["Mama's Gun" => "9", "Introspection" => "8", "Stereotype A" => 
 $albumRatings["Abbey Road"] = "10";
 ksort($albumRatings);
 
-$pageContent = "\n<h1>Favorite Albums<br></h1>". $value;
+$pageContent = "\n<h1>Favorite Albums</h1>" . "\n<p>$value</p>" . "\n<p></p>";
 
 $band = array (
     "The Beatles" = array("A Hard Day's Night,"=>"1964","Help!,"=>"1965","Rubber Soul,"=>"1965","Abbey Road,"=>"1969");
@@ -16,9 +16,9 @@ $band = array (
 $value = $band ["The Who"] ["1969"];
 
 foreach ($band as $subArray => $band) {
-    $pageContent .= "<p>The band " . $subArray . " released:<br>";
+    $band[] = "\n<p>The band " . $subArray . " released:<br>";
     foreach ($band as $albumName => $albumYear) {
-        echo "$albumName in $albumYear<br>";
+        $band[] = "\n$albumName in $albumYear<br>";
     }
 
     echo "\n</p>"
@@ -29,11 +29,11 @@ $who = array("The Who" = $rowArray);
 
 foreach ($who as $subArray => $who) {
 	if ($subArray == "The Who") {
-		$pageContent .= "<p>The band" . $subArray . " released:<br>\n";
+		$who[] = "\n<p>The band" . $subArray . " released:<br>\n";
 		foreach ($rowArray as $albumName => $albumYear) {
-			echo "$albumName in $albumYear<br>\n";
+			$who[] = "\n$albumName in $albumYear<br> ";
 		}
-		echo "\n</p>";
+		echo "</p>";
 	}
 }
 
@@ -43,12 +43,12 @@ $seventyArray3 = array("Quadrophenia" => "1973", "The Who by Numbers" => "1975")
 $band70s = array("Led Zepplin" = $seventyArray1, "Rolling Stones" = $seventyArray2, "The Who" = $seventyArray3);
 
 foreach ($band70s as $subArray => $band70s) {
-    $pageContent .= "<p>The band " . $subArray . " released:<br>";
+    $band70s[] = "\n<p>The band " . $subArray . " released:<br>";
     foreach ($band70s as $albumName => $albumYear) {
-        echo "$albumName in $albumYear<br>";
+        $band70s[] = "\n$albumName in $albumYear<br>";
     }
 
-    echo "\n</p>";
+    echo "</p>";
 }
 
 echo "\n<p>$pageContent</p>";
