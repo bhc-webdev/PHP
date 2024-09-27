@@ -1,5 +1,5 @@
 <?php
-$pageContent = "<h1>Favorite Albums</h1>";
+$pageContent = "Favorite Albums";
 
 $albumRatings = ["Mama's Gun" => "9", "Introspection" => "8", "Stereotype A" => "10", "Marble" => "7", "This is the One" => "8"];
 $albumRatings["Abbey Road"] = "10";
