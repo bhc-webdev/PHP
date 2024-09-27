@@ -14,11 +14,10 @@ $ledZepplin = ["Led Zepplin IV"=>"1971"];
 $rollingStones = ["Let It Bleed"=>"1969", "Sticky Fingers"=>"1971"];
 $theWho = ["Tommy"=>"1969", "Quadrophenia"=>"1973", "The Who by Numbers"=>"1975"];
 
-
 $band = ["The Beatles" => $beatles, "Led Zepplin" => $ledZepplin, "Rolling Stones" => $rollingStones, "The Who" => $theWho];
 
 foreach ($band as $bandName => $albumList) {
-    $pageContent . "\n<h2>$band</h2><ul>";
+    echo "\n<h2>$band</h2><ul>";
     foreach ($albumList as $songTitle => $songYear) {
         echo "\n<li>$songTitle - $songYear</li>";
     }
