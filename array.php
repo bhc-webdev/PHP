@@ -31,7 +31,7 @@ foreach ($band as $bandName => $albumList) {
 $whoList = "";
 foreach ($band as $bandName => $albumList) {
     if ($bandName == "The Who") {
-		$whoList .="\n<h2>$bandName</h2>";
+		$whoList .="\n<h2>$bandName</h2><ul>";
         foreach ($albumList as $songTitle => $songYear) {
             echo "\n<li>$songTitle - $songYear</li>";
         }
