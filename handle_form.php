@@ -35,12 +35,12 @@ if(empty(_$POST['media'])) {
 
 for ($i = $quantity, $i >= 0, $i++) {
     $totalCDPrice = $i * ($cdPrice + $shipping); 
-    echo "The price for $quantity CD(s) is $totalCDPrice."
+    echo "The price for $quantity CD(s) is $totalCDPrice.";
 }
 
 while ($media = "dl") {
     $totalDownloadPrice = $quantity * ($downloadPrice + $shipping);
-    echo "The price for $quantity Download(s) is $totalDownloadPrice." 
+    echo "The price for $quantity Download(s) is $totalDownloadPrice."; 
 }
 
 ?>
