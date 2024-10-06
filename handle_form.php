@@ -37,13 +37,13 @@ for ($i = $quantity, $i >= 0, $i++) {
     echo "The price for $quantity CD(s) is $totalCDPrice."
 }
 
-while ($media = "download") {
+while ($media = "dl") {
     $totalDownloadPrice = $quantity * ($downloadPrice + $shipping);
     echo "The price for $quantity Download(s) is $totalDownloadPrice." 
 }
 
-?>
 
+echo <<< EOD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,7 +54,7 @@ while ($media = "download") {
     </head>
 
     <body>
-        <div class="container">
+        <div class="container pl-2">
             <header>
                 <h1>Form Processing</h1>
             </header>
@@ -79,3 +79,7 @@ while ($media = "download") {
     </body>
 
 </html>
+
+EOD;
+
+?>

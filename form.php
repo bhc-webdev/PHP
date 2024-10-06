@@ -20,7 +20,7 @@
         <section>
             <h2>Practice Form</h2>
                 <p>Please make your selections from the form below.</p>
-                <fieldset>
+                <fieldset class="pl-2">
                     <legend> Sample Form </legend>
                     <form method="post" action="handle_form.php">
                         <p>
@@ -32,7 +32,7 @@
                             <input type="text" name="quantity" id="quantity" value="">
                         </p>
                         <p><label for="album">Choose a Album</label><br>
-                            <select name="album" id="album" class="dropdown-menu">
+                            <select name="album" id="album">
                                 <option value="Mama's Gun">Mama's Gun</option>
                                 <option value="Intropection">Introspection</option>
                                 <option value="Strerotype A">Stereotype A</option>
