@@ -33,12 +33,12 @@ if(!isset($_POST['media'])) {
 
 for ($i = $quantity, $i >= 0, $i++) {
     $totalCDPrice = $i * ($cdPrice + $shipping); 
-    echo "The price for $quantity CD(s) is $totalCDPrice.";
+    echo "<p>The price for $quantity CD(s) is $totalCDPrice.<p>";
 }
 
 while ($media = "dl") {
     $totalDownloadPrice = $quantity * ($downloadPrice + $shipping);
-    echo "The price for $quantity Download(s) is $totalDownloadPrice."; 
+    echo "<p>The price for $quantity Download(s) is $totalDownloadPrice.<p>"; 
 }
 
 ?>
@@ -66,7 +66,7 @@ while ($media = "dl") {
 				<h2><?php echo $heading; ?> - <?php echo $media; ?></h2>
 				<article>
                     <?php
-                    "<h3>Order for $userName</h3>"
+                        echo "<h3>Order for $userName</h3>";
                         echo $orderList;
                         echo $userNameError;
                         echo $quantityError;
