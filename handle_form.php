@@ -1,15 +1,13 @@
 <?php
 
-
 $shipping = 2.99;
 $downloadPrice = 9.99;
 $cdPrice = 12.99;
 $heading = "Cost by Quantity";
 $orderList = NULL;
-$media = $_POST["media"]
 
 
-if(empty(_$POST['userName'])) {
+if(empty($_POST['userName'])) {
     $userName = "Guest";
     $userNameError = "><p class='error'>Username was missing from the form submission and is required to process your order. Please <a href='form.php'>go back to the order form</a> and complete the form.</p>";
 } else {
@@ -17,7 +15,7 @@ if(empty(_$POST['userName'])) {
     $userNameError = NULL;
 }
 
-if(empty(_$POST['quantity'])) {
+if(empty($_POST['quantity'])) {
     $quantity = NULL;
     $quantityError = "><p class='error'>Quantity was missing from the form submission and is required to process your order. Please <a href='form.php'>go back to the order form</a> and complete the form.</p>";
 } else {
@@ -25,7 +23,7 @@ if(empty(_$POST['quantity'])) {
     $quantityError = NULL;
 }
 
-if(empty(_$POST['media'])) {
+if(!isset($_POST['media'])) {
     $media = NULL;
     $mediaError = "><p class='error'>Media selection was missing from the form submission and is required to process your order. Please <a href='form.php'>go back to the order form</a> and complete the form.</p>";
 } else {
@@ -65,10 +63,10 @@ while ($media = "dl") {
 		    </nav>
 
             <section>
-				<h2><?php echo $heading; ?> - <?php echo $_POST["media"]; ?></h2>
+				<h2><?php echo $heading; ?> - <?php echo $media; ?></h2>
 				<article>
-					<h3>Order for <?php echo $_POST["userName"]; ?></h3>
                     <?php
+                    "<h3>Order for $userName</h3>"
                         echo $orderList;
                         echo $userNameError;
                         echo $quantityError;
