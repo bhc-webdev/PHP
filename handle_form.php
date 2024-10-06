@@ -42,8 +42,8 @@ while ($media = "dl") {
     echo "The price for $quantity Download(s) is $totalDownloadPrice." 
 }
 
+?>
 
-echo <<< EOD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -79,7 +79,3 @@ echo <<< EOD
     </body>
 
 </html>
-
-EOD;
-
-?>
