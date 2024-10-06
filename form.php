@@ -22,7 +22,7 @@
                 <p>Please make your selections from the form below.</p>
                 <fieldset class="pl-2">
                     <legend> Sample Form </legend>
-                    <form method="post" action="handle_form.php">
+                    <form method="post" action="handle_form.php" method="GET">
                         <p>
                             <label for="userName">Name</label><br>
                             <input type="text" name="userName" id="userName" value="" class="form-control-static">

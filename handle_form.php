@@ -6,6 +6,7 @@ $downloadPrice = 9.99;
 $cdPrice = 12.99;
 $heading = "Cost by Quantity";
 $orderList = NULL;
+$media = $_GET["media"]
 
 
 if(empty(_$POST['userName'])) {
