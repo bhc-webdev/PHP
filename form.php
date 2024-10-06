@@ -17,12 +17,12 @@
 			<a href="index.php">Home</a> | <a href="form.php">Order Form</a>
 		</nav>
 
-        <section>
+        <section class="pl-2">
             <h2>Practice Form</h2>
                 <p>Please make your selections from the form below.</p>
                 <fieldset class="pl-2">
                     <legend> Sample Form </legend>
-                    <form method="post" action="handle_form.php" method="GET">
+                    <form method="post" action="handle_form.php">
                         <p>
                             <label for="userName">Name</label><br>
                             <input type="text" name="userName" id="userName" value="" class="form-control-static">

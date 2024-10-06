@@ -6,7 +6,7 @@ $downloadPrice = 9.99;
 $cdPrice = 12.99;
 $heading = "Cost by Quantity";
 $orderList = NULL;
-$media = $_GET["media"]
+$media = $_POST["media"]
 
 
 if(empty(_$POST['userName'])) {
@@ -65,9 +65,9 @@ while ($media = "dl") {
 		    </nav>
 
             <section>
-				<h2><?php echo $heading; ?> - <?php echo $media; ?></h2>
+				<h2><?php echo $heading; ?> - <?php echo $_POST["media"]; ?></h2>
 				<article>
-					<h3>Order for <?php echo $userName; ?></h3>
+					<h3>Order for <?php echo $_POST["userName"]; ?></h3>
                     <?php
                         echo $orderList;
                         echo $userNameError;
