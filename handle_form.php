@@ -23,7 +23,7 @@ if(empty($_POST['quantity'])) {
     $quantityError = NULL;
 }
 
-if(!isset($_POST['media'])) {
+if(isset($_POST['media'])) {
     $media = NULL;
     $mediaError = "><p class='error'>Media selection was missing from the form submission and is required to process your order. Please <a href='form.php'>go back to the order form</a> and complete the form.</p>";
 } else {
