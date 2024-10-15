@@ -2,9 +2,17 @@
 
 $pageTitle = "Invoice";
 
-$albums = array("Erykah Badu" => "Mama's Gun", "UMI" => "Introspection", "Cibo Matto" => "Stereotype A", "Tomosuke" => "Marble", "Utada" => "This is the One", 
-"The 1999" => "Journey in the Rain", "UMI" => "Love Language", "UMI" = > "talking to the wind", "Pasteboard" = > "Glitter", "Josh Cooper" = "Fluroescence",
-"The Beatles" => "The White Album")
+$albums = array("Erykah Badu" => "Mama's Gun", 
+                "UMI" => "Introspection", 
+                "Cibo Matto" => "Stereotype A", 
+                "Tomosuke" => "Marble", 
+                "Utada" => "This is the One", 
+                "The 1999" => "Journey in the Rain", 
+                "UMI" => "Love Language", 
+                "UMI" => "talking to the wind", 
+                "Pasteboard" => "Glitter", 
+                "Josh Cooper" => "Fluroescence",
+                "The Beatles" => "The White Album");
 
 ?>
 
@@ -34,14 +42,14 @@ $albums = array("Erykah Badu" => "Mama's Gun", "UMI" => "Introspection", "Cibo M
                     <p>Please make your selections from the form below.</p>
                     <fieldset class="pl-2">
                         <legend> Sample Form </legend>
-                        <form method="post" action="handle_form.php">
+                        <form method="post" action="handle-invoice.php">
                             <p>
                                 <label for="userName">Name</label><br>
                                 <input type="text" name="userName" id="userName" value="" class="form-control-static">
                             </p>
                             <p><label for="album">Choose a Album</label><br>
                                 <select name="album" id="album">
-                                <option value="">-----------------</option>
+                                <option value="">&lt;- Select Album -&gt;</option>
                                     <?php
                                     foreach($albums as $key => $value):
                                     echo '<option value="'.$key.'">'.$key.' - '.$value.'</option>';
